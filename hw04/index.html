@@ -153,8 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
-    </div>
+      這次的作業我學到如何用3d slicer轉換成dicom，再用colab去轉換成png，但是不知道爲什麼我用colab轉換時都會遇到轉換錯誤的問題，好像是我dicom格式有問題，debug就花了一段時間，但之後就是用labelme去做標記就很正常，沒有遇到什麼大問題。Labelme也是我第一次學到的標註工具，讓我受益良多。
   </div>
 
   <!-- ------------------------------------------------>
@@ -169,22 +168,28 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 將06_ct.nii.gz 透過3D Slicer 還原成233切的 .dcm檔，將含有主動脈瓣的 .dcm壓縮成 dcm.zip 透過 Colab 轉成 .png檔。<br>
+                                使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+                                將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 將06_ct.nii.gz 透過3D Slicer 擴充圖片至64張。<br>
+                                使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+                                將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 上傳整理完的一份 .txt 檔至 github<br>
+                                AP 分數，名列全班前20名。(1pt)<br>
+                                AP 分數，名列全班前10名。(1pt)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -203,7 +208,13 @@
   </div>
 
   <!-- ------------------------------------------------>
-
+<div class="row hw12 bottomrow">
+  <div class="col-md-12 twenty">
+    標註檔連結: 
+    <a href="https://github.com/yeh-chun-yu/ml2025f/blob/main/hw04/113598028.txt" download>
+    </a>
+  </div>
+</div>
   <!-- ------------------------------------------------>
 
 
@@ -252,3 +263,4 @@
 
 </body>
 </html>
+
